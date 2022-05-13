@@ -57,16 +57,17 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\BackGround.cs" />
+    <Compile Include="Assets\Scripts\Trap_damage.cs" />
     <Compile Include="Assets\Scripts\Health.cs" />
+    <Compile Include="Assets\Scripts\CameraScript.cs" />
     <Compile Include="Assets\Scripts\Healthbar.cs" />
     <Compile Include="Assets\Scripts\PlayerMovement.cs" />
     <Compile Include="Assets\Scripts\Projectile.cs" />
     <Compile Include="Assets\Scripts\PlayerAttack.cs" />
-    <Compile Include="Assets\Scripts\CameraScript.cs" />
-    <Compile Include="Assets\Scripts\Trap_damage.cs" />
     <Compile Include="Assets\Scripts\HealtCollect.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Assets\2D ForestArt\2D ForestArt\ReedMe.txt" />
     <None Include="Assets\Dragon Warrior Files\Read Me.txt" />
   </ItemGroup>
   <ItemGroup>

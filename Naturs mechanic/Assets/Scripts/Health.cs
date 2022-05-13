@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System.Threading;
+using UnityEngine.SceneManagement;
 
 public class Health : MonoBehaviour
 {
@@ -28,6 +30,8 @@ public class Health : MonoBehaviour
         {
             TakeDamage(1);
         }
+
+        
     }
 
     public void TakeDamage(float _damage)
@@ -45,7 +49,12 @@ public class Health : MonoBehaviour
                 anime.SetTrigger("die");
                 GetComponent<PlayerMovement>().enabled = false;
                 dead = true;
+
+                StartCoroutine(TheEnd());
+                        
+
             }
+            
         }
     }
 
@@ -53,6 +62,15 @@ public class Health : MonoBehaviour
     {
         currentHealth = Mathf.Clamp(currentHealth + _heal, 0, startingHealth);
     }
+
+    IEnumerator TheEnd()
+    {
+        
+        
+        yield return new WaitForSeconds(2);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
+
 
   
 }
