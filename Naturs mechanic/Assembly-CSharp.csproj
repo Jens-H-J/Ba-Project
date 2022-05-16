@@ -59,6 +59,7 @@
     <Compile Include="Assets\Scripts\BackGround.cs" />
     <Compile Include="Assets\Scripts\Trap_damage.cs" />
     <Compile Include="Assets\Scripts\Health.cs" />
+    <Compile Include="Assets\Scripts\enemyAI.cs" />
     <Compile Include="Assets\Scripts\CameraScript.cs" />
     <Compile Include="Assets\Scripts\Healthbar.cs" />
     <Compile Include="Assets\Scripts\PlayerMovement.cs" />
@@ -292,6 +293,9 @@
     </Reference>
     <Reference Include="UnityEditor.UnityConnectModule">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.27f1\Editor\Data\Managed\UnityEngine\UnityEditor.UnityConnectModule.dll</HintPath>
+    </Reference>
+    <Reference Include="Pathfinding.Ionic.Zip.Reduced">
+      <HintPath>Assets\AstarPathfindingProject\Plugins\DotNetZip\Pathfinding.Ionic.Zip.Reduced.dll</HintPath>
     </Reference>
     <Reference Include="netstandard">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.27f1\Editor\Data\NetStandard\ref\2.0.0\netstandard.dll</HintPath>
@@ -759,6 +763,18 @@
     <ProjectReference Include="Unity.2D.SpriteShape.Runtime.csproj">
       <Project>{1D7B8936-E13E-219E-F8D9-2575A656B41D}</Project>
       <Name>Unity.2D.SpriteShape.Runtime</Name>
+    </ProjectReference>
+    <ProjectReference Include="AstarPathfindingProjectEditor.csproj">
+      <Project>{F13202C9-5B4C-A5B9-2362-C8867ADCBD9B}</Project>
+      <Name>AstarPathfindingProjectEditor</Name>
+    </ProjectReference>
+    <ProjectReference Include="AstarPathfindingProject.csproj">
+      <Project>{AF1DBAB3-13A7-BB8D-6A05-4FB39451B36F}</Project>
+      <Name>AstarPathfindingProject</Name>
+    </ProjectReference>
+    <ProjectReference Include="PackageToolsEditor.csproj">
+      <Project>{55A0CCD1-06B5-BF1C-91B3-0D4F711AA0D2}</Project>
+      <Name>PackageToolsEditor</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
