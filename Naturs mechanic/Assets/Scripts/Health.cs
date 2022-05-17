@@ -26,9 +26,12 @@ public class Health : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-       
+        if (this.gameObject.transform.position.y <= -30)
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        }
 
-        
+
     }
 
     public void TakeDamage(float _damage)
@@ -62,8 +65,7 @@ public class Health : MonoBehaviour
 
     IEnumerator TheEnd()
     {
-        
-        
+
         yield return new WaitForSeconds(2);
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }

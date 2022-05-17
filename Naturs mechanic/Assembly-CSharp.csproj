@@ -680,6 +680,10 @@
       <Project>{63F52939-11C5-7123-0D62-AD7E1DB9E87C}</Project>
       <Name>Unity.Timeline</Name>
     </ProjectReference>
+    <ProjectReference Include="PackageToolsEditor.csproj">
+      <Project>{55A0CCD1-06B5-BF1C-91B3-0D4F711AA0D2}</Project>
+      <Name>PackageToolsEditor</Name>
+    </ProjectReference>
     <ProjectReference Include="Unity.TextMeshPro.csproj">
       <Project>{E44B438A-34D4-554B-583E-69EA852928F1}</Project>
       <Name>Unity.TextMeshPro</Name>
@@ -728,6 +732,10 @@
       <Project>{06C51B43-4D96-B018-DE46-B65440563FCE}</Project>
       <Name>Unity.2D.IK.Runtime</Name>
     </ProjectReference>
+    <ProjectReference Include="AstarPathfindingProject.csproj">
+      <Project>{AF1DBAB3-13A7-BB8D-6A05-4FB39451B36F}</Project>
+      <Name>AstarPathfindingProject</Name>
+    </ProjectReference>
     <ProjectReference Include="Unity.2D.Animation.Triangle.Runtime.csproj">
       <Project>{C96834DE-663C-B46B-41D5-2E5535669C11}</Project>
       <Name>Unity.2D.Animation.Triangle.Runtime</Name>
@@ -752,6 +760,10 @@
       <Project>{E36387CD-01CA-68F0-06D0-F63A6F41891E}</Project>
       <Name>Unity.2D.Common.Runtime</Name>
     </ProjectReference>
+    <ProjectReference Include="AstarPathfindingProjectEditor.csproj">
+      <Project>{F13202C9-5B4C-A5B9-2362-C8867ADCBD9B}</Project>
+      <Name>AstarPathfindingProjectEditor</Name>
+    </ProjectReference>
     <ProjectReference Include="Unity.2D.SpriteShape.Editor.csproj">
       <Project>{72B75F71-A286-6082-8368-76A38E843AB1}</Project>
       <Name>Unity.2D.SpriteShape.Editor</Name>
@@ -763,18 +775,6 @@
     <ProjectReference Include="Unity.2D.SpriteShape.Runtime.csproj">
       <Project>{1D7B8936-E13E-219E-F8D9-2575A656B41D}</Project>
       <Name>Unity.2D.SpriteShape.Runtime</Name>
-    </ProjectReference>
-    <ProjectReference Include="AstarPathfindingProjectEditor.csproj">
-      <Project>{F13202C9-5B4C-A5B9-2362-C8867ADCBD9B}</Project>
-      <Name>AstarPathfindingProjectEditor</Name>
-    </ProjectReference>
-    <ProjectReference Include="AstarPathfindingProject.csproj">
-      <Project>{AF1DBAB3-13A7-BB8D-6A05-4FB39451B36F}</Project>
-      <Name>AstarPathfindingProject</Name>
-    </ProjectReference>
-    <ProjectReference Include="PackageToolsEditor.csproj">
-      <Project>{55A0CCD1-06B5-BF1C-91B3-0D4F711AA0D2}</Project>
-      <Name>PackageToolsEditor</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -285,6 +285,9 @@
     <Reference Include="Unity.VisualStudio.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll</HintPath>
     </Reference>
+    <Reference Include="PackageToolsEditor">
+      <HintPath>Library\ScriptAssemblies\PackageToolsEditor.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.2D.IK.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.2D.IK.Editor.dll</HintPath>
     </Reference>
@@ -318,17 +321,14 @@
     <Reference Include="Unity.Mathematics.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.Mathematics.Editor.dll</HintPath>
     </Reference>
+    <Reference Include="AstarPathfindingProjectEditor">
+      <HintPath>Library\ScriptAssemblies\AstarPathfindingProjectEditor.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.2D.SpriteShape.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.2D.SpriteShape.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Common.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.2D.Common.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="AstarPathfindingProjectEditor">
-      <HintPath>Library\ScriptAssemblies\AstarPathfindingProjectEditor.dll</HintPath>
-    </Reference>
-    <Reference Include="PackageToolsEditor">
-      <HintPath>Library\ScriptAssemblies\PackageToolsEditor.dll</HintPath>
     </Reference>
     <Reference Include="Pathfinding.Ionic.Zip.Reduced">
       <HintPath>Assets\AstarPathfindingProject\Plugins\DotNetZip\Pathfinding.Ionic.Zip.Reduced.dll</HintPath>
@@ -708,6 +708,10 @@
       <Project>{5387045A-68C6-F0C7-8BF0-279C63B6487D}</Project>
       <Name>Unity.2D.IK.Runtime.Player</Name>
     </ProjectReference>
+    <ProjectReference Include="AstarPathfindingProject.Player.csproj">
+      <Project>{B2240FBF-B915-0843-C86D-F5BD25856B09}</Project>
+      <Name>AstarPathfindingProject.Player</Name>
+    </ProjectReference>
     <ProjectReference Include="Unity.2D.Animation.Triangle.Runtime.Player.csproj">
       <Project>{BEC1B075-493F-9481-8F26-340AD63C87C7}</Project>
       <Name>Unity.2D.Animation.Triangle.Runtime.Player</Name>
@@ -723,10 +727,6 @@
     <ProjectReference Include="Unity.2D.SpriteShape.Runtime.Player.csproj">
       <Project>{BF12EAF1-4144-6185-F398-58C573DFF7A9}</Project>
       <Name>Unity.2D.SpriteShape.Runtime.Player</Name>
-    </ProjectReference>
-    <ProjectReference Include="AstarPathfindingProject.Player.csproj">
-      <Project>{B2240FBF-B915-0843-C86D-F5BD25856B09}</Project>
-      <Name>AstarPathfindingProject.Player</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
