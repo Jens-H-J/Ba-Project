@@ -13,8 +13,8 @@ public class Trap_damage : MonoBehaviour
 
     private void Awake()
     {
-        leftEdge = transform.position.z - movementDistance;
-        rightEdge = transform.position.z + movementDistance;
+        leftEdge = transform.position.x - movementDistance;
+        rightEdge = transform.position.x + movementDistance;
 
     }
 
