@@ -179,7 +179,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Speed: 5
-  JumpPower: 4
+  JumpPower: 5
   boxCollider: {fileID: 0}
   groundLayer:
     serializedVersion: 2

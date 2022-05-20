@@ -21,6 +21,9 @@ public class enemyAI : MonoBehaviour
     private float damage = 1;
     public float health;
 
+    //public GameObject activate;
+   
+
     // Start is called before the first frame update
     void Start()
     {
@@ -48,6 +51,7 @@ public class enemyAI : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
+        
         if (path == null)
             return;
 
@@ -77,6 +81,11 @@ public class enemyAI : MonoBehaviour
             gameObject.SetActive(false);
         }
 
+        /*if(activate.GetComponent<Collision2D>.tag == "Player")
+        {
+            this.gameObject.SetActive(true);
+        }*/
+
 
     }
     
@@ -90,5 +99,13 @@ public class enemyAI : MonoBehaviour
             {
                 health = health - 1;
             }
+
         }
+
+    public void activation()
+    {
+        
+        enabled = true;
+    }
+    
 }
