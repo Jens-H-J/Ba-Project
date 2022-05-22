@@ -67,6 +67,7 @@
     <Compile Include="Assets\Scripts\Projectile.cs" />
     <Compile Include="Assets\Scripts\PlayerAttack.cs" />
     <Compile Include="Assets\Scripts\HealtCollect.cs" />
+    <Compile Include="Assets\Scripts\Guide\Hint.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\2D ForestArt\2D ForestArt\ReedMe.txt" />
