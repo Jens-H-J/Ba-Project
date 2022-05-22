@@ -6624,6 +6624,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 607402089}
     m_Modifications:
+    - target: {fileID: 495803201876442856, guid: 7967f54e2730fc04da0421ec1be1a170, type: 3}
+      propertyPath: m_Size.x
+      value: 5.0812025
+      objectReference: {fileID: 0}
+    - target: {fileID: 495803201876442856, guid: 7967f54e2730fc04da0421ec1be1a170, type: 3}
+      propertyPath: m_Offset.x
+      value: 0.6960437
+      objectReference: {fileID: 0}
     - target: {fileID: 1865398932367740035, guid: 7967f54e2730fc04da0421ec1be1a170, type: 3}
       propertyPath: m_Name
       value: platform (4)
@@ -14626,6 +14634,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 607402089}
     m_Modifications:
+    - target: {fileID: 495803201876442856, guid: 7967f54e2730fc04da0421ec1be1a170, type: 3}
+      propertyPath: m_Size.x
+      value: 4.7655134
+      objectReference: {fileID: 0}
+    - target: {fileID: 495803201876442856, guid: 7967f54e2730fc04da0421ec1be1a170, type: 3}
+      propertyPath: m_Offset.x
+      value: 0.5381987
+      objectReference: {fileID: 0}
     - target: {fileID: 1865398932367740035, guid: 7967f54e2730fc04da0421ec1be1a170, type: 3}
       propertyPath: m_Name
       value: platform (3)
