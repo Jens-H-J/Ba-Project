@@ -10,6 +10,7 @@ public class Health : MonoBehaviour
     public float currentHealth { get; private set; }
     private Animator anime;
     private bool dead;
+    private bool invulnerable;
 
     private void Awake()
     {
@@ -36,9 +37,13 @@ public class Health : MonoBehaviour
 
     public void TakeDamage(float _damage)
     {
-        currentHealth = Mathf.Clamp(currentHealth - _damage, 0, startingHealth);
-
-        if(currentHealth > 0)
+        if(invulnerable == false)
+        {
+            currentHealth = Mathf.Clamp(currentHealth - _damage, 0, startingHealth); 
+            StartCoroutine(HitDelay());
+        }
+       
+        if (currentHealth > 0)
         {
             anime.SetTrigger("hurt");
         }
@@ -56,6 +61,7 @@ public class Health : MonoBehaviour
             }
             
         }
+        
     }
 
     public void AddHealth(float _heal)
@@ -68,6 +74,15 @@ public class Health : MonoBehaviour
 
         yield return new WaitForSeconds(2);
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
+
+    IEnumerator HitDelay()
+    {
+        invulnerable = true;
+        
+        yield return new WaitForSeconds(3f);
+        invulnerable = false;
+
     }
 
 
