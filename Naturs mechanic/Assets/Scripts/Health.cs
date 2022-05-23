@@ -37,31 +37,31 @@ public class Health : MonoBehaviour
 
     public void TakeDamage(float _damage)
     {
-        if(invulnerable == false)
+        if (invulnerable == false)
         {
-            currentHealth = Mathf.Clamp(currentHealth - _damage, 0, startingHealth); 
+            currentHealth = Mathf.Clamp(currentHealth - _damage, 0, startingHealth);
             StartCoroutine(HitDelay());
-        }
-       
-        if (currentHealth > 0)
-        {
-            anime.SetTrigger("hurt");
-        }
-        else
-        {
-            if (!dead)
-            {
-                anime.SetTrigger("die");
-                GetComponent<PlayerMovement>().enabled = false;
-                dead = true;
 
-                StartCoroutine(TheEnd());
-                        
+
+            if (currentHealth > 0)
+            {
+                anime.SetTrigger("hurt");
+            }
+            else
+            {
+                if (!dead)
+                {
+                    anime.SetTrigger("die");
+                    GetComponent<PlayerMovement>().enabled = false;
+                    dead = true;
+
+                    StartCoroutine(TheEnd());
+
+
+                }
 
             }
-            
         }
-        
     }
 
     public void AddHealth(float _heal)
@@ -80,7 +80,7 @@ public class Health : MonoBehaviour
     {
         invulnerable = true;
         
-        yield return new WaitForSeconds(3f);
+        yield return new WaitForSeconds(1);
         invulnerable = false;
 
     }
