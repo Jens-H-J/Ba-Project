@@ -70,7 +70,7 @@ public class PlayerMovement : MonoBehaviour
                 body.gravityScale = 1;
             }
 
-            if (Input.GetKey(KeyCode.Space))
+            if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow))
             {
                 Jump();
             }

@@ -61,12 +61,13 @@
     <Compile Include="Assets\Scripts\Health.cs" />
     <Compile Include="Assets\Scripts\enemyAI.cs" />
     <Compile Include="Assets\Scripts\CameraScript.cs" />
+    <Compile Include="Assets\Scripts\Activation.cs" />
     <Compile Include="Assets\Scripts\Healthbar.cs" />
     <Compile Include="Assets\Scripts\PlayerMovement.cs" />
     <Compile Include="Assets\Scripts\Projectile.cs" />
     <Compile Include="Assets\Scripts\PlayerAttack.cs" />
+    <Compile Include="Assets\Scripts\Guide\Hint.cs" />
     <Compile Include="Assets\Scripts\HealtCollect.cs" />
-    <Compile Include="Assets\Scripts\Activation.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\2D ForestArt\2D ForestArt\ReedMe.txt" />
