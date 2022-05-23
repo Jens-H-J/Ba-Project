@@ -23,7 +23,7 @@ public class Projectile : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        StartCoroutine(Deactivate());
+        
     }
 
     // Update is called once per frame
@@ -43,12 +43,12 @@ public class Projectile : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.IsTouchingLayers(8))
+        if (collision.tag == "Ground" || collision.tag == "Enemy")
         {
             hit = true;
             boxCollider.enabled = false;
             anime.SetTrigger("Eksplode");
-            gameObject.SetActive(false);
+            StartCoroutine(Deactivate());
         }
     }
 
@@ -67,13 +67,14 @@ public class Projectile : MonoBehaviour
         }
 
         transform.localScale = new Vector3(transform.localScale.x, localScaleY, transform.localScale.z);
-        
+
+        StartCoroutine(Deactivate());
 
     }
-    
+
     IEnumerator Deactivate()
     {
-        yield return new WaitForSeconds(3);
+        yield return new WaitForSeconds(1);
         gameObject.SetActive(false);
     }
 }

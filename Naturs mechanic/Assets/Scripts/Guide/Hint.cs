@@ -38,7 +38,7 @@ public class Hint : MonoBehaviour
         }
         else if (other.CompareTag("Player") && mek == mechanic.win)
         {
-            hintText.text = "YOU'VE COMPLETED THE LEVEL";
+            hintText.text = "LEVEL COMPLETED";
         } 
         
     }
